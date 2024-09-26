@@ -7,7 +7,9 @@ Website for a pseudo web agency.
 
 -   HTML
 -   CSS
+-   Javascript
 
 ## Acknowledgments
 
 -   [Remix icon](https://remixicon.com)
+-   [Google fonts](https://fonts.google.com/)
