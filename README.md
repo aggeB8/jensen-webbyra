@@ -1,7 +1,6 @@
-<center> 
-<h3>Jensen Webbyrå</h3>
-Website for a larger pseudo web agency. The agency has Swedish companies as it's main costumer and provides a large amount of different web solutions.
-</center>
+<h3 align="center">Jensen Webbyrå</h3>
+<p align="center">Website for a larger pseudo web agency. The agency has Swedish companies as it's main costumer and provides a large amount of different web solutions.</p>
+
 
 ## Built with
 
