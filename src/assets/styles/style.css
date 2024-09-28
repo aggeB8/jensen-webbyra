@@ -1,1 +1,4 @@
 @import "./base.css";
+
+/* Components */
+@import "./components/header.css";
