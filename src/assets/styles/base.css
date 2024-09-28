@@ -10,9 +10,9 @@
 /* Variables */
 :root {
     /* Text */
-    --text-xs: 1rem;
     --text-sm: 1rem;
-    --text-md: 1rem;
-    --text-lg: 1rem;
-    --text-xl: 1rem;
+    --text-md: 1.2rem;
+    --text-lg: 1.4rem;
+    --text-xl: 2rem;
+    --text-2xl: 3rem;
 }
