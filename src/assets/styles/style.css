@@ -1,1 +1,36 @@
 @import "./base.css";
+<<<<<<< Updated upstream
+=======
+
+/* Components */
+@import "./components/header.css";
+
+.content-wrapper {
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+}
+
+.rounded-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-size: var(--text-md);
+    font-weight: 500;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+>>>>>>> Stashed changes
