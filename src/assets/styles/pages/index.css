@@ -1,0 +1,34 @@
+#home-wrapper {
+    text-align: center;
+    height: 90dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#subtitle {
+    margin-top: 0.5rem;
+    font-size: var(--text-lg);
+    color: #605f5f;
+}
+
+#main-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#rounded-vision-btn {
+    background-color: #006aa7;
+    color: #fff;
+}
+
+#rounded-contact-btn {
+    border: 1px solid #cbcbcb;
+}
+
+#rounded-contact-btn i {
+    margin-left: 0.5rem;
+}
