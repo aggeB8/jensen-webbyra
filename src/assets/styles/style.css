@@ -1,6 +1,4 @@
 @import "./base.css";
-<<<<<<< Updated upstream
-=======
 
 /* Components */
 @import "./components/header.css";
@@ -33,4 +31,6 @@ input[type="reset"] {
     cursor: pointer;
     outline: inherit;
 }
->>>>>>> Stashed changes
+
+/* Components */
+@import "./components/header.css";

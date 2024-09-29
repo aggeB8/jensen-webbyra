@@ -8,7 +8,30 @@
             href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
             rel="stylesheet"
         />
+        <script src="assets/scripts/header.js"></script>
         <title>Jensen Webbyrå</title>
     </head>
-    <body></body>
+    <body>
+        <div id="header-container">
+            <header>
+                <div id="header-icon-container">
+                    <i class="ri-gemini-fill"></i>
+                    <i
+                        onclick="openHeader()"
+                        id="header-visibility-btn"
+                        class="ri-menu-line"
+                    ></i>
+                </div>
+
+                <ul id="header-nav">
+                    <li><a href="./index.html">Hem</a></li>
+                    <li><a href="">Projekt</a></li>
+                    <li><a href="./vision.html">Vision</a></li>
+                    <li id="contact-btn">
+                        <a href="./contact.html">Kontakta oss</a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+    </body>
 </html>
