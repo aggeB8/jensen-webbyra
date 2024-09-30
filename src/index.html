@@ -9,22 +9,15 @@
             rel="stylesheet"
         />
         <title>Jensen Webbyrå</title>
-    </head>
-    <body></body>
         <link rel="stylesheet" href="./assets/styles/pages/index.css" />
         <script src="assets/scripts/header.js"></script>
-        <title>Jensen Webbyrå</title>
     </head>
     <body>
         <div id="header-container">
             <header>
                 <div id="header-icon-container">
                     <i class="ri-gemini-fill"></i>
-                    <i
-                        onclick="openHeader()"
-                        id="header-visibility-btn"
-                        class="ri-menu-line"
-                    ></i>
+                    <i onclick="openHeader()" id="header-visibility-btn" class="ri-menu-line"></i>
                 </div>
 
                 <ul id="header-nav">
@@ -38,20 +31,45 @@
             </header>
         </div>
 
-        <main class="content-wrapper" id="home-wrapper">
+        <main class="content-container home-content-container">
             <h1>Din vision, vår<br />digitala lösning.</h1>
-            <p id="subtitle">
-                Vi skapar digitala lösningar som lyfter<br />din verksamhet.
-            </p>
+            <p id="subtitle">Vi skapar digitala lösningar som lyfter<br />din verksamhet.</p>
 
             <div id="main-buttons">
-                <button id="rounded-vision-btn" class="rounded-btn">
-                    Vår vision
-                </button>
+                <button id="rounded-vision-btn" class="rounded-btn">Vår vision</button>
                 <button id="rounded-contact-btn" class="rounded-btn">
                     Kontakt<i class="ri-arrow-right-line"></i>
                 </button>
             </div>
         </main>
+
+        <div id="achievement-section" class="content-container home-content-container">
+            <div id="achievement-container">
+                <h2>Webbyrån med över</h2>
+                <div>
+                    <p class="achievement-sub">200 klienter</p>
+                    <p class="achievement-sub">350 webbsidor</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            addEventListener("DOMContentLoaded", () => {
+                const achievement = document.getElementById("achievement-container")
+                const achievementBounding = achievement.getBoundingClientRect()
+
+                const div = document.createElement("div")
+
+                divHeight = 100
+                divWidth = 100
+
+                const top = achievement.offsetTop - div.clientHeight
+
+                div.style.cssText = `background-color: #000; height: ${divHeight}px; width:${divWidth}px; position: absolute; left: ${
+                    achievement.offsetLeft + achievementBounding.width
+                }px; top: ${achievement.offsetTop - divHeight}px`
+                achievement.appendChild(div)
+            })
+        </script>
     </body>
 </html>
