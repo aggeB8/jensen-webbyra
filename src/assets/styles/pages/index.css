@@ -1,4 +1,4 @@
-#home-wrapper {
+.home-content-wrapper {
     text-align: center;
     height: 90dvh;
     width: 100dvw;
@@ -31,4 +31,21 @@
 
 #rounded-contact-btn i {
     margin-left: 0.5rem;
+}
+
+#rounded-contact-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all linear 0.2s;
+}
+
+#achievement {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.achievement-sub {
+    font-size: var(--text-2xl);
+    font-weight: 600;
 }
