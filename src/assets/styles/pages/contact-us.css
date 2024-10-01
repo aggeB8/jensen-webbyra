@@ -11,11 +11,10 @@
   grid-row: 5;
 }
 
-#header {
-  border: 1px solid black;
+#header-container {
   grid-column: 2 / span 2;
   grid-row: 1;
-  height: 7rem;
+  height: 8rem;
 }
 
 #contact-us-h1 {
@@ -25,6 +24,7 @@
   display: flex;
   justify-content: center;
 }
+
 #question-h1 {
   height: 7rem;
   grid-row: 2;
@@ -32,13 +32,18 @@
   display: flex;
   justify-content: center;
 }
+
 #contact-us-info {
+  display: flex;
+  flex-wrap: wrap;
   height: 15rem;
   grid-column: 1 / span 2;
   grid-row: 3;
 }
+
+
 #question-boxes {
-  height: 30rem;
+  height: 15rem;
   grid-column: 3 / span 2;
   grid-row: 3;
 }
@@ -49,31 +54,53 @@
   font-weight: 750;
   align-self: center;
 }
+
 #question-text {
   line-height: var(--text-lg);
   font-size: var(--text-lg);
   font-weight: 750;
   align-self: center;
 }
-#contact-us-info {
+
+#contact-us-info-text {
   display: flex;
   flex-direction: column;
   line-height: var(--text-md);
   font-size: var(--text-md);
   font-weight: 500;
-  align-items: center;
   justify-content: space-around;
+  gap: 3rem;
+  margin-left: 4rem;
 }
+
+#contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3rem;
+  padding-left: 4rem;
+
+}
+
+.ri-phone-line,
+.ri-mail-line,
+.ri-map-pin-line {
+  line-height: var(--text-md);
+  font-size: var(--text-md);
+}
+
 #question-boxes {
   line-height: var(--text-md);
   font-size: var(--text-md);
   font-weight: 500;
 }
+
 #form-part1 {
   display: flex;
   justify-content: space-around;
   margin: 3rem;
 }
+
 #fname-phone-label,
 #lname-email-input,
 #fname-phone-input,
@@ -83,13 +110,29 @@
   gap: 3rem;
 }
 
+#img-box {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-message {
+  grid-column: 3 / span 2;
+  grid-row: 4;
+  height: 18rem;
+  line-height: var(--text-md);
+  font-size: var(--text-md);
+}
+
 #form-part2 {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
 }
+
 #fname,
 #lname,
 #email,
@@ -97,10 +140,13 @@
   border: none;
   border-bottom: 1px solid black;
 }
+
 #message-box {
   width: 26rem;
 }
+
 input {
   outline: none;
   border-bottom: 1px solid black;
+  width: 8rem;
 }
