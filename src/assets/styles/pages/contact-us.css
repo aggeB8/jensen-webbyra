@@ -1,0 +1,152 @@
+#container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2%;
+  row-gap: 2rem;
+  margin-top: 1rem;
+}
+
+#footer-container {
+  grid-column: 1 / -1;
+  grid-row: 5;
+}
+
+#header-container {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  height: 8rem;
+}
+
+#contact-us-h1 {
+  height: 7rem;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+}
+
+#question-h1 {
+  height: 7rem;
+  grid-row: 2;
+  grid-column: 3 / span 2;
+  display: flex;
+  justify-content: center;
+}
+
+#contact-us-info {
+  display: flex;
+  flex-wrap: wrap;
+  height: 15rem;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+
+#question-boxes {
+  height: 15rem;
+  grid-column: 3 / span 2;
+  grid-row: 3;
+}
+
+#contact-us-text {
+  line-height: var(--text-lg);
+  font-size: var(--text-lg);
+  font-weight: 750;
+  align-self: center;
+}
+
+#question-text {
+  line-height: var(--text-lg);
+  font-size: var(--text-lg);
+  font-weight: 750;
+  align-self: center;
+}
+
+#contact-us-info-text {
+  display: flex;
+  flex-direction: column;
+  line-height: var(--text-md);
+  font-size: var(--text-md);
+  font-weight: 500;
+  justify-content: space-around;
+  gap: 3rem;
+  margin-left: 4rem;
+}
+
+#contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3rem;
+  padding-left: 4rem;
+
+}
+
+.ri-phone-line,
+.ri-mail-line,
+.ri-map-pin-line {
+  line-height: var(--text-md);
+  font-size: var(--text-md);
+}
+
+#question-boxes {
+  line-height: var(--text-md);
+  font-size: var(--text-md);
+  font-weight: 500;
+}
+
+#form-part1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem;
+}
+
+#fname-phone-label,
+#lname-email-input,
+#fname-phone-input,
+#lname-email-label {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#img-box {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-message {
+  grid-column: 3 / span 2;
+  grid-row: 4;
+  height: 18rem;
+  line-height: var(--text-md);
+  font-size: var(--text-md);
+}
+
+#form-part2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#fname,
+#lname,
+#email,
+#phone-number {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#message-box {
+  width: 26rem;
+}
+
+input {
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 8rem;
+}
