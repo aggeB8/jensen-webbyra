@@ -35,10 +35,10 @@
 
 #contact-us-info {
   display: flex;
-  flex-wrap: wrap;
   height: 15rem;
   grid-column: 1 / span 2;
   grid-row: 3;
+  align-items: center;
 }
 
 
@@ -124,6 +124,7 @@
   height: 18rem;
   line-height: var(--text-md);
   font-size: var(--text-md);
+  font-weight: 500;
 }
 
 #form-part2 {
@@ -149,4 +150,53 @@ input {
   outline: none;
   border-bottom: 1px solid black;
   width: 8rem;
+}
+
+@media screen and (max-width: 992px) {
+  #img-box {
+    display: none;
+  }
+
+  #contact-us-h1 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
+
+  #contact-us-info {
+    grid-row: 3;
+    grid-column: 1 / span 4;
+  }
+
+  #question-h1 {
+    grid-row: 4;
+    grid-column: 1 / span 4;
+  }
+
+  #question-boxes {
+    grid-row: 5;
+    grid-column: 1 / span 4;
+  }
+
+  #form-message {
+    grid-row: 6;
+    grid-column: 1 / span 4;
+  }
+
+  #footer-container {
+    grid-row: 7;
+  }
+
+  input {
+    width: 12rem;
+  }
+
+  #contact-icons {
+    padding-left: 20rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #contact-icons {
+    padding-left: 12rem;
+  }
 }
