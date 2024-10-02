@@ -8,12 +8,13 @@ header {
     font-size: var(--text-sm);
     font-weight: 500;
     background-color: rgb(238, 238, 238, 0.92);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     justify-content: space-between;
     border-radius: 1.8rem;
     padding: 1.3rem;
     display: flex;
     position: fixed;
+    z-index: 1;
 }
 
 #header-icon-container {
