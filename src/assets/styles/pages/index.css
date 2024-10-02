@@ -1,4 +1,3 @@
-
 main {
     max-width: 1180px;
     margin: 0 auto;
@@ -7,7 +6,6 @@ main {
 section {
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 
 .heading {
@@ -75,7 +73,6 @@ h1 {
     color: #fff;
     transition: all linear 0.2s;
 }
-
 
 #info-container {
     text-align: start;
@@ -301,11 +298,12 @@ h2 {
     }
 
     #services-grid {
+        gap: 2rem;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .service:last-child {
-        display: block;
+        display: flex;
     }
 
     #info-splitter {
@@ -354,5 +352,4 @@ h2 {
     #services-subtitle {
         max-width: 100%;
     }
-
 }
