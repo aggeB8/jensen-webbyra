@@ -1,38 +1,17 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;    
-    padding-top: 8%;
-    row-gap: 50px;
-    column-gap: 5rem;
+
+    padding: 8% 0;
     text-align: center;
-    padding-bottom: 8rem;
+    gap: 50px 5rem;
 }
 
-/*.parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
-
-.vision {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-}
-
-.varderingar {
-    grid-column:  2 / 2;
-    grid-row:  1 / 1;
-}
-
-.innovation {
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
-}
-
+.vision,
+.varderingar,
+.innovation,
 .historia {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
+    padding: 2rem;
 }
 
 .roadmap-title {
@@ -60,8 +39,7 @@
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -2px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .roadmap-item {
@@ -69,6 +47,7 @@
     width: 50%;
     padding: 20px 40px;
     box-sizing: border-box;
+    z-index: -2;
 }
 
 .roadmap-item.left {
@@ -97,6 +76,7 @@
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
   
 .roadmap h3 {
@@ -110,35 +90,76 @@
 @media screen and (max-width: 992px) {
     .container {
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
+        gap: 3rem;
         padding-top: 16%;
         padding-bottom: 4rem;
     }
-
-    /*.vision,
-    .varderingar,
-    .historia, 
-    .innovation {
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }*/
-
     .container > div {
         display: inline-block;
         position: relative;
+        padding: 20px;
     }
     
     .container > div::after {
         content: '';
         position: absolute;
-        left: 15%;
-        right: 15%;
-        bottom: -12%;
+        left: 0;
+        right: 0;
+        bottom: -10px;
         height: 1px;
         background-color: lightgrey;
-        width: 70%;
+        margin: 0 auto;
+        width: 50%;
     }
 
-    .roadmap-title {
-        
+    .roadmap-item {
+        width: 100%;
+        left: 0 !important;
     }
+
+    .roadmap::before {
+        left: 10px;
+    }
+    
+    .roadmap-item::before {
+        left: 12px;
+        top: 40%;
+    }
+
+    .roadmap-content {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 8% 2rem;
+    }
+
+    .vision,
+    .varderingar,
+    .innovation,
+    .historia {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .roadmap {
+        padding: 20px 0;
+        max-width: 100%;
+        margin: 40 auto;
+    }
+
+    .roadmap-item {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
 }
