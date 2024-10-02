@@ -3,21 +3,17 @@
 /* Components */
 @import "./components/header.css";
 
-.content-wrapper {
-    padding: 2rem;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: var(--text-2xl);
-    font-weight: 600;
-}
-
 .rounded-btn {
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
     font-size: var(--text-md);
     font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 button,
