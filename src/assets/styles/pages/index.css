@@ -201,6 +201,8 @@ h2 {
 }
 
 #review-container {
+    margin-bottom: 4rem;
+
     flex-direction: column;
     align-items: start;
     overflow: hidden;
