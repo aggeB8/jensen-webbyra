@@ -31,45 +31,147 @@
             </header>
         </div>
 
-        <main class="content-container home-content-container">
-            <h1>Din vision, vår<br />digitala lösning.</h1>
-            <p id="subtitle">Vi skapar digitala lösningar som lyfter<br />din verksamhet.</p>
+        <main>
+            <div class="content-container home-content-container">
+                <div id="hero">
+                    <h1>Din vision, vår<br />digitala lösning.</h1>
+                    <p id="hero-subtitle">
+                        Vi skapar digitala lösningar som lyfter<br />din verksamhet.
+                    </p>
 
-            <div id="main-buttons">
-                <button id="rounded-vision-btn" class="rounded-btn">Vår vision</button>
-                <button id="rounded-contact-btn" class="rounded-btn">
-                    Kontakt<i class="ri-arrow-right-line"></i>
-                </button>
-            </div>
-        </main>
-
-        <div id="achievement-section" class="content-container home-content-container">
-            <div id="achievement-container">
-                <h2>Webbyrån med över</h2>
-                <div>
-                    <p class="achievement-sub">200 klienter</p>
-                    <p class="achievement-sub">350 webbsidor</p>
+                    <div id="main-buttons">
+                        <a href="./vision.html" id="rounded-vision-btn" class="rounded-btn">
+                            Vår vision
+                        </a>
+                        <a href="./contact.html" id="rounded-contact-btn" class="rounded-btn">
+                            Kontakt<i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <script>
-            addEventListener("DOMContentLoaded", () => {
-                const achievement = document.getElementById("achievement-container")
-                const achievementBounding = achievement.getBoundingClientRect()
+            <section>
+                <div id="info-splitter">
+                    <div id="info-container">
+                        <h2>Jensen Webbyrå</h2>
+                        <p class="heading">
+                            Erfaren och pålitlig webbpartner med fokus på era digitala framgångar
+                        </p>
+                        <p class="subtitle">
+                            Välkommen till en av Sveriges större aktörer inom webbutveckling och
+                            kreativ digital design för verksamheter med höga ambitioner.
+                        </p>
+                        <a
+                            class="rounded-btn"
+                            style="
+                                background-color: #006aa7;
+                                width: fit-content;
+                                color: #fff;
+                                margin-top: 2rem;
+                            "
+                            href="./"
+                            >Se våra projekt</a
+                        >
+                    </div>
+                    <div id="info-img-wrapper">
+                        <div id="traffic">
+                            <div id="traffic-red"></div>
+                            <div id="traffic-yellow"></div>
+                            <div id="traffic-green"></div>
+                            <p>https://swedbank.se/foretag</p>
+                        </div>
+                        <img src="./assets/img/swedbank.png" alt="" />
+                    </div>
+                </div>
+            </section>
 
-                const div = document.createElement("div")
+            <section id="services-container">
+                <div>
+                    <p class="heading">Allt inom digital information</p>
+                    <p class="subtitle" id="services-subtitle">
+                        I en tid där digital information spelar en avgörande roll i alla aspekter av
+                        våra liv, är vi stolta över att kunna erbjuda en komplett lösning för alla
+                        dina behov inom detta område. Oavsett om du söker strategier för digital
+                        marknadsföring, utveckling av webbplatser, hantering av sociala medier eller
+                        insikter genom dataanalys, har vi kompetensen som krävs för att hjälpa dig
+                        nå dina mål.
+                    </p>
+                </div>
+                <div id="services-grid">
+                    <div class="service">
+                        <i class="service-icon ri-pen-nib-line"></i>
+                        <p class="service-title">Grafisk Design</p>
+                        <p class="service-description">
+                            Logotyper, varumärkesprofiler och marknadsföringsmaterial – vi skapar
+                            visuella uttryck som förstärker ditt varumärke och kommunicerar din
+                            vision.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <i class="service-icon ri-code-s-slash-line"></i>
+                        <p class="service-title">Webbdesign & Utveckling</p>
+                        <p class="service-description">
+                            Vi skapar unika, responsiva och användarvänliga hemsidor som speglar
+                            ditt varumärkes personlighet och möter dina affärsmål.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <i class="service-icon ri-pen-nib-line"></i>
+                        <p class="service-title">Digital Marknadsföring</p>
+                        <p class="service-description">
+                            Vi hjälper dig att nå ut till rätt målgrupp med strategisk SEO, Google
+                            Ads, och sociala medier-marknadsföring för ökad synlighet och
+                            engagemang.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <i class="service-icon ri-line-chart-line"></i>
+                        <p class="service-title">Strategisk Rådgivning</p>
+                        <p class="service-description">
+                            Vi guidar dig genom den digitala världen med skräddarsydda strategier
+                            och insikter som driver din verksamhet framåt.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                divHeight = 100
-                divWidth = 100
+            <section id="review-container">
+                <div>
+                    <p class="heading">Vad säger våra kunder?</p>
+                    <p id="review-subtitle" class="subtitle">
+                        Vi har nöjet att samarbeta med en bred och mångsidig kundbas, som spänner
+                        över olika branscher. Våra kunder inkluderar allt från nystartade företag
+                        och småföretag till etablerade företag och internationella koncerner.
+                    </p>
+                </div>
+                <div id="review-grid">
+                    <div id="swedbank-img" class="review-img-container">
+                        <i class="ri-play-fill"></i>
+                    </div>
 
-                const top = achievement.offsetTop - div.clientHeight
+                    <div class="review">
+                        <div class="review-description">
+                            <img src="./assets/img/swedbank-logo.png" alt="" class="review-logo" />
+                            <p class="subtitle">
+                                "Jensen Webbyrå räddade oss från konkurs med deras expertis."
+                            </p>
+                            <p class="person-description">Jens Henriksson<br />VD, Swedbank AB</p>
+                        </div>
+                    </div>
 
-                div.style.cssText = `background-color: #000; height: ${divHeight}px; width:${divWidth}px; position: absolute; left: ${
-                    achievement.offsetLeft + achievementBounding.width
-                }px; top: ${achievement.offsetTop - divHeight}px`
-                achievement.appendChild(div)
-            })
-        </script>
+                    <div id="scania-img" class="review-img-container">
+                        <i class="ri-play-fill"></i>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-description">
+                            <img src="./assets/img/scania-logo.png" alt="" class="review-logo" />
+                            <p class="subtitle">"Otroligt jobb!"</p>
+                            <p class="person-description">Christian Levin<br />VD, Scania AB</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
