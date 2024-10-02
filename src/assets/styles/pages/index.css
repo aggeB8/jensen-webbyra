@@ -1,3 +1,4 @@
+
 main {
     max-width: 1180px;
     margin: 0 auto;
@@ -74,6 +75,7 @@ h1 {
     color: #fff;
     transition: all linear 0.2s;
 }
+
 
 #info-container {
     text-align: start;
@@ -352,4 +354,5 @@ h2 {
     #services-subtitle {
         max-width: 100%;
     }
+
 }
