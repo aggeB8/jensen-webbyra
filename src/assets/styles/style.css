@@ -27,6 +27,3 @@ input[type="reset"] {
     cursor: pointer;
     outline: inherit;
 }
-
-/* Components */
-@import "./components/header.css";
