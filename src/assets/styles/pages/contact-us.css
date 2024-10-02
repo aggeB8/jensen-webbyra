@@ -67,7 +67,8 @@
   line-height: var(--text-md);
   font-size: var(--text-md);
   font-weight: 500;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
   margin-left: 4rem;
 }
@@ -75,9 +76,8 @@
 #contact-icons {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding-left: 20%;
   gap: 3rem;
-  padding-left: 15rem;
 }
 
 .ri-phone-line,
@@ -150,7 +150,7 @@ input {
   width: 8rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 993px) {
   #img-box {
     display: none;
   }
@@ -189,7 +189,7 @@ input {
   }
 
   #contact-icons {
-    padding-left: 20rem;
+    padding-left: 25%;
   }
 }
 
