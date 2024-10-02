@@ -1,15 +1,19 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;    
     padding-top: 8%;
-    text-align: center;
     row-gap: 50px;
+    column-gap: 5rem;
+    text-align: center;
+    padding-bottom: 8rem;
 }
 
-p {
-    text-align: center;
-}
+/*.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
 
 .vision {
     grid-column: 1 / 1;
@@ -31,3 +35,110 @@ p {
     grid-row: 2 / 2;
 }
 
+.roadmap-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-title h3 {
+    font-size: var(--text-2xl);
+}
+
+.roadmap {
+    position: relative;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.roadmap::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: -1;
+}
+
+.roadmap-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.roadmap-item.left {
+    left: 0;
+}
+  
+.roadmap-item.right {
+    left: 50%;
+}
+  
+.roadmap-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    top: 20px;
+    left: 50%;
+    border: 4px solid #006AA7;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.roadmap-content {
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.roadmap h3 {
+    margin-bottom: 10px;
+}
+
+.roadmap p {
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 16%;
+        padding-bottom: 4rem;
+    }
+
+    /*.vision,
+    .varderingar,
+    .historia, 
+    .innovation {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }*/
+
+    .container > div {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .container > div::after {
+        content: '';
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        bottom: -12%;
+        height: 1px;
+        background-color: lightgrey;
+        width: 70%;
+    }
+
+    .roadmap-title {
+        
+    }
+}
