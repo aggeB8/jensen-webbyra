@@ -14,7 +14,7 @@
 
 -   UX:
 
-    -   General feeling: Proffesional, cleanliness, energetic.
+    -   General feeling: Proffesional, cleanliness.
     -   Target audience: Swedish companies.
     -   Easy to navigate, uncluttered.
 
@@ -22,7 +22,7 @@
     -   Clear text hierarchy for improved readability.
     -   Logo: Simple star (excellence, minimalistic, imagination)
     -   Font: Inter (basic but proffesional font with good readability)
-    -   General theme: minimalism, borders and strong border radius, slight usage of background blur. (aligned with our general feeling)
+    -   General theme: Uncluttered, minimal, borders and strong border radius. (aligned with our general feeling)
     -   Colors:
         -   Black and white with steps inbetween.
         -   Swedish blue #006AA7. Used to capture the emotions of blue which is often regarded to be secure, trustworthy and loyal. The blue also comes directly from the Swedish flag which reflects our costumer base.
