@@ -90,6 +90,12 @@
   font-size: var(--text-md);
   font-weight: 500;
 }
+#submit-btn {
+  background-color: #006aa7;
+  color: #fff;
+  height: 2rem;
+  border-radius: 2rem;
+}
 
 #form-part1 {
   display: flex;
